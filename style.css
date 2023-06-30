@@ -1,0 +1,98 @@
+/* font-family : 'baloo Chettan 2', cursive; */
+:root {
+    --color1 : #FBBC01
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'baloo Chettan 2', cursive;
+
+}
+
+li {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+header {
+    width: 100vw;
+    height: 100vh;
+    background: url(image/2.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: relative;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+/* header::before {
+    padding: absolute;
+    height: 100%;
+    width:  100%;
+    content: "";
+    display: block;
+    background: rgba(0, 0, 0, 0.5); 
+    
+} */
+
+header input {
+    width: 50px;
+    height: 50px;
+    padding: absolute;
+    top: 12px;
+    left: 12px;
+    opacity: 0.3;
+    z-index: 2;
+    cursor: pointer;
+    position: fixed;
+}
+
+.menu-icon {
+    width: 50px;
+    height: 50px;
+    padding: absolute;
+    top: 12px;
+    left: 12px;
+    opacity: 1;
+    z-index: 2;
+    cursor: pointer;
+    position: fixed;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.menu-line {
+    height: 4px;
+    width: 100%;
+    background: var(--color1);
+    padding: relative;
+}
+
+.menu-line::before {
+    content: "";
+    display: block;
+    width: 100%;
+    height: 4px;
+    position: absolute;
+    background: var(--color1);
+    top: 4px;
+}
+
+.menu-line::after {
+    content: "";
+    display: block;
+    width: 100%;
+    height: 4px;
+    position: absolute;
+    background: var(--color1);
+    top: 44px;
+}
